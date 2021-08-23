@@ -74,31 +74,40 @@ h2{
     border-top-right-radius:15px;
     border-bottom-right-radius:15px; 
 }
-@media screen and (max-width:575px){
+@media screen and (max-width:775px){
     .container{
         flex-direction: column-reverse;
         height: 100%;
     }
     .rightContainer{
         padding: 0;
-        margin: 0;
-        width: 100%;
+        margin: 15% 5%;
+
+        margin-bottom: 0;
+        width: 90%;
         height: 30vh;
         background-image: url('images/image-header-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 0;
+        border-top-left-radius:15px;
+        border-top-right-radius:15px;
     }
     .innerDiv{
         border-radius: 0;
+        border-top-left-radius:15px;
+        border-top-right-radius:15px;
     }
     .leftContainer{
         text-align: center;
         padding: 0;
-        margin: 0;
-        width: 100%;
+        margin: 15% 5%;
+        margin-top: 0 ;
+        width: 90%;
         height: 100vh;
         border-radius: 0;
+        border-bottom-left-radius:15px;
+        border-bottom-right-radius:15px;
     }
     .mainHeading{
         margin: 30px auto;
