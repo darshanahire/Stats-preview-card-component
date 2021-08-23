@@ -74,7 +74,7 @@ h2{
     border-top-right-radius:15px;
     border-bottom-right-radius:15px; 
 }
-@media screen and (max-width:775px){
+@media screen and (max-width:975px){
     .container{
         flex-direction: column-reverse;
         height: 100%;
