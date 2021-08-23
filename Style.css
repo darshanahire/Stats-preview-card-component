@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px; 
+    font-family:Inter,'Lexend Deca';
+}
+.container{
+    height: 100vh;
+    display: flex;
+    background-color: hsl(233, 47%, 7%);
+}
+.leftContainer{
+    width: 43%;
+    margin: 7%;
+    padding: 40px 0;
+    padding-left:70px ;
+    background-color: hsl(244, 38%, 16%);
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+    margin-right: 0;
+}
+.mainHeading{
+    margin: 40px 0;
+    width: 80%;
+    font-size:3rem;
+    color: hsl(0, 0%, 100%);
+}
+.mainPara{
+    text-transform:capitalize;
+    width: 70%;
+    margin: 5% 0;
+    font-size: 18px;
+    line-height: 35px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.stats{
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-top: 75px;
+    display: flex;
+    width: 90%;
+}
+.stats span{
+    width: 75%;
+    text-transform: uppercase;
+}
+.stats :nth-child(2){
+    margin: auto;
+}
+h2{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.rightContainer{
+    width: 43%;
+    margin: 7%;
+    margin-left: 0;
+    background-image: url('images/image-header-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+}
+.innerDiv{
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+    z-index: -1;
+    background: hsl(277, 64%, 61%);
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px; 
+}
+@media screen and (max-width:475px){
+    .container{
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    .rightContainer{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 30vh;
+        background-image: url('images/image-header-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0;
+    }
+    .innerDiv{
+        border-radius: 0;
+    }
+    .leftContainer{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .mainHeading{
+        margin: 30px auto;
+        font-size: 2rem;
+    }
+    .mainPara{
+        margin: auto;
+        font-size: 15px;
+    }   
+    .stats{
+        display: block;
+        margin: 30px auto;
+    }
+}
