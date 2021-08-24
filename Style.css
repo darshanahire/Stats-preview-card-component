@@ -8,11 +8,15 @@ html,body{
     font-size: 15px; 
     font-family:Inter,'Lexend Deca';
 }
+
+/* main container style */
 .container{
     height: 100vh;
     display: flex;
     background-color: hsl(233, 47%, 7%);
 }
+
+/* leftSide bar style */
 .leftContainer{
     width: 43%;
     margin: 7%;
@@ -43,24 +47,25 @@ html,body{
     display: flex;
     width: 90%;
 }
+.stats :nth-child(2){
+    margin: auto;
+}
 .stats span{
     width: 75%;
     text-transform: uppercase;
 }
-.stats :nth-child(2){
-    margin: auto;
-}
-h2{
+.stats span :nth-child(1){
     color: hsl(0, 0%, 100%);
     margin-bottom: 15px;
     font-size: 25px;
 }
+
+/* rightSide bar style */
 .rightContainer{
     width: 43%;
     margin: 7%;
     margin-left: 0;
-    background-image: url('images/image-header-mobile.jpg');
-    background-repeat: no-repeat;
+    background: url('images/image-header-mobile.jpg') no-repeat;
     background-size: cover;
     border-top-right-radius:15px;
     border-bottom-right-radius:15px;
@@ -74,6 +79,8 @@ h2{
     border-top-right-radius:15px;
     border-bottom-right-radius:15px; 
 }
+
+/* added media quries for small devices */
 @media screen and (max-width:975px){
     .container{
         flex-direction: column-reverse;
@@ -82,12 +89,10 @@ h2{
     .rightContainer{
         padding: 0;
         margin: 15% 5%;
-
         margin-bottom: 0;
         width: 90%;
         height: 30vh;
-        background-image: url('images/image-header-mobile.jpg');
-        background-repeat: no-repeat;
+        background : url('images/image-header-mobile.jpg') no-repeat ;
         background-size: cover;
         border-radius: 0;
         border-top-left-radius:15px;
